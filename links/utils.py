@@ -27,6 +27,6 @@ def get_link_data(url):
 def send_email(message,rec_email):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login('iamvaruag@gmail.com', 'Igi@12345')
-    s.sendmail('iamvaruag@gmail.com', rec_email, message)
+    s.login('contesteverydayat2005@gmail.com', 'Igi@12345')
+    s.sendmail('contesteverydayat2005@gmail.com', rec_email, message)
     s.quit()
