@@ -36,16 +36,16 @@
     {% if qs %}
         {% for item in qs %}
             <div class="card mt-3">
-                <div class="card-header">
-                    <h5>{{item.name}}</h5>
+                <div class="card-header" style="background-color: #FFC300;">
+                    <h5 style="color: #041C32;">{{item.name}}</h5>
                     <a href="{% url 'delete' item.pk %}"><button class="btn btn-danger">delete?</button></a>
                 </div>
-                <div class="card-body">
-                    <div class="blockquote">
-                        <div>current price (Rs): {{item.current_price}}</div>
-                        <div>old price (Rs): {{item.old_price}}</div>
-                        <div>difference (Rs): {{item.price_difference|colorize}}</div>
-                        <div>link: <a href="{{item.url}}">{{item.url}}</a></div>
+                <div class="card-body" style="background-color: beige;">
+                    <div class="blockquote" style="background-color: beige;">
+                        <div style="font-weight: 600;">current price (Rs): {{item.current_price}}</div>
+                        <div style="color: brown;font-weight: 600;">old price (Rs): {{item.old_price}}</div>
+                        <div style="color: blue;font-weight: 600;">difference (Rs): {{item.price_difference|colorize}}</div>
+                        <div>Link: <a href="{{item.url}}"><button class="btn btn-success btn-lg"> Buy On Amazon</button></a></div>
                     </div>
                 </div>
             </div>
